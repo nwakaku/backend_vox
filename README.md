@@ -1,6 +1,6 @@
-# Daydream Movies Backend
+# Vox App Backend
 
-Backend server for Daydream Movies application providing speech-to-text functionality and emotion analysis.
+Backend server for Vox App application providing speech-to-text functionality and emotion analysis.
 
 ## Features
 
