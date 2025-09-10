@@ -1,5 +1,5 @@
 {
-  "name": "daydream-movies-backend",
+  "name": "vox-backend",
   "version": "1.0.0",
   "description": "Backend server for Daydream Movies - Speech-to-text and emotion analysis",
   "type": "module",

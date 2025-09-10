@@ -14,13 +14,16 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin:  ["http://localhost:3000", "http://localhost:5173"], // allow both
+    origin:  ["http://localhost:3000", "http://localhost:5173", "https://thevox.vercel.app"], // allow localhost and production
     methods: ["GET", "POST"]
   }
 });
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:3000", "http://localhost:5173", "https://thevox.vercel.app"],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.static('../dist')); // Serve built frontend from parent directory
 
